@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Lunu admin configuration
+*
+* @category  Lunu
+* @package   Lunu_Merchant
+* @author    Lunu Solutions GmbH
+* @copyright   Lunu Solutions GmbH (https://lunu.io)
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Lunu\Merchant\Model\ConfigProvider" type="Magento\Payment\Model\CcGenericConfigProvider">
+        <arguments>
+            <argument name="methodCodes" xsi:type="array">
+                <item name="lunu_merchant" xsi:type="const">Lunu\Merchant\Model\Payment::CODE</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

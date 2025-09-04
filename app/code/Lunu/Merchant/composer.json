@@ -1,0 +1,40 @@
+{
+    "name": "lunu/magento2-plugin",
+    "type": "magento2-module",
+    "description": "Cryptocurrency payment gateway. The customer enters the type of cryptocurrency he/she wishes to use as payment at checkout. The site then launches the Lunu Widget which converts cryptos to local currency, with payment going to the retailer’s online account in fiat.",
+    "version": "2.0.1",
+    "keywords": [
+        "lunu",
+        "cryptocurrency",
+        "bitcoin",
+        "ethereum",
+        "altcoin",
+        "altcoins",
+        "merchant",
+        "gateway",
+        "payment",
+        "magento",
+        "btc",
+        "eth",
+        "trx",
+        "bnb"
+    ],
+    "authors": [
+        {
+            "name": "Lunu Solutions GmbH",
+            "homepage": "https://lunu.io"
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://lunu.io",
+    "require": {
+      "ext-curl": "*",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "files": ["registration.php"],
+        "psr-4": {
+            "Lunu\\Merchant\\": ""
+        }
+    }
+}

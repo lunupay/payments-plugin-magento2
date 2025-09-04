@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <lunu_merchant>
+            <app_id></app_id>
+            <api_secret></api_secret>
+            <test>
+                <enabled>0</enabled>
+            </test>
+            <sandbox_app_id>fcb412e5-6d19-44d3-bdb0-269785c54604</sandbox_app_id>
+            <sandbox_api_secret>c59fae9b-2c07-4a5a-8ad3-f2749438b2a0</sandbox_api_secret>
+            <payment_timeout>0</payment_timeout>
+            <lunu_gift_enabled>
+                <enabled>0</enabled>
+            </lunu_gift_enabled>
+            <logs_enabled>
+                <enabled>0</enabled>
+            </logs_enabled>
+        </lunu_merchant>
+    </default>
+</config>

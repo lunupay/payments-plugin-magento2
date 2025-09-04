@@ -1,0 +1,13 @@
+.idea
+/node_modules/
+/target/
+/build/
+/deploy/
+*/dist/
+/docs/
+/coverage/
+*.tmp*
+.cache
+*.hidden*
+lunu_log.txt
+Lunu.zip

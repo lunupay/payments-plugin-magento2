@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Lunu admin configuration
+*
+* @category  Lunu
+* @package   Lunu_Merchant
+* @author    Lunu Solutions GmbH
+* @copyright   Lunu Solutions GmbH (https://lunu.io)
+*/
+-->
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd"
+>
+    <system>
+        <section id="payment">
+            <group id="lunu_merchant" translate="label" type="text" sortOrder="88" showInDefault="1" showInWebsite="1" showInStore="1">
+              <label>Lunu Pay</label>
+              <comment>
+                  <![CDATA[Not working? Contact <a href="mailto:support@lunu.com">support@lunu.io</a>]]>
+              </comment>
+              <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Enabled</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+              <field id="app_id" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>App ID</label>
+              </field>
+              <field id="api_secret" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>API Secret</label>
+              </field>
+              <field id="test" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Sandbox mode</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+              <field id="sandbox_app_id" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Sandbox App ID</label>
+              </field>
+              <field id="sandbox_api_secret" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Sandbox API Secret</label>
+              </field>
+              <field id="payment_timeout" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Payment timeout</label>
+              </field>
+              <field id="lunu_gift_enabled" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Lunu gift enabled</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+              <field id="logs_enabled" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="0">
+                  <label>Logs enabled</label>
+                  <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+              </field>
+            </group>
+        </section>
+    </system>
+</config>

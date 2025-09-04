@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Lunu module dependency
+*
+* @category  Lunu
+* @package   Lunu_Merchant
+* @author    Lunu Solutions GmbH
+* @copyright   Lunu Solutions GmbH (https://lunu.io)
+*/
+-->
+<config
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd"
+>
+    <default>
+        <payment>
+            <lunu_merchant>
+                <active>0</active>
+                <model>Lunu\Merchant\Model\Payment</model>
+                <order_status>pending_payment</order_status>
+                <payment_action>authorize_capture</payment_action>
+                <title>Cryptocurrencies via Lunu</title>
+            </lunu_merchant>
+        </payment>
+    </default>
+</config>
